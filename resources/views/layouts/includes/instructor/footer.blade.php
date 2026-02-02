@@ -1,6 +1,6 @@
 
 
-<footer class="bg-neutral-primary-soft shadow-xs border border-default m-4 mt-16">
+<footer class="bg-neutral-primary-soft shadow-xs border border-default mt-16">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
@@ -23,7 +23,7 @@
             </ul>
         </div>
         <hr class="my-6 border-default sm:mx-auto lg:my-8" />
-        <span class="block text-sm text-body sm:text-center">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+        <span class="block text-sm text-body sm:text-center">© 2023 {{now()->format('Y')}} <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
     </div>
 </footer>
 
