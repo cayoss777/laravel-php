@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Instructor;
 
 use App\Http\Controllers\Controller;
+
+//use App\Http\Controllers\Instructor\CourseController;
 use App\Models\Course;
 use Illuminate\Http\Request;
 
@@ -14,6 +16,7 @@ class CourseController extends Controller
     public function index()
     {
         //
+        return view('instructor.courses.index');
     }
 
     /**
@@ -22,6 +25,7 @@ class CourseController extends Controller
     public function create()
     {
         //
+        return view('instructor.courses.create');
     }
 
     /**
