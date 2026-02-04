@@ -2,7 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Instructor\CourseController;
 
+
+
+
+
+Route::resource('courses', CourseController::class)->names('instructor.courses');
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,5 +23,4 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });*/
-
 

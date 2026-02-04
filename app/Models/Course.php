@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+
+use App\Enums\CourseStatus;
 use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model
@@ -25,6 +27,9 @@ class Course extends Model
         'price_id',
         ];
 
+        protected $casts=[
+        'status'=>CourseStatus::class,
+        ];
         public function teacher()
         {
             return $this->belongsTo(User::class);   

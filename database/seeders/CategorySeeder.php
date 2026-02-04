@@ -16,12 +16,13 @@ class CategorySeeder extends Seeder
         //
 
         $categories=[
-            'Web',
+            'Programación Web',
+            'Diseño Web',
             'Móvil',
             'Juegos',
         ];
 
-        foreach($categories as $category){
+        foreach ($categories as $category){
             Category::create([
                 'name'=>$category,
             ]);

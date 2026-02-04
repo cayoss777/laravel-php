@@ -16,22 +16,22 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
 
-            $table->text('summary');
-            $table->text('description');
+            $table->text('summary')->nullable();;
+            $table->text('description')->nullable();;
 
             $table->integer('status')->default(1);
 
-            $table->string('image_path')->nullable;
-            $table->string('video_path')->nullable;
+            $table->string('image_path')->nullable();
+            $table->string('video_path')->nullable();
 
-            $table->text('welcome_message')->nullable;
-            $table->text('googbye_message')->nullable;
-            $table->text('observation')->nullable;
+            $table->text('welcome_message')->nullable();
+            $table->text('googbye_message')->nullable();
+            $table->text('observation')->nullable();
 
-            $table->foreignId('user_id')->constrained;
-            $table->foreignId('level_id')->constrained;
-            $table->foreignId('category_id')->constrained;
-            $table->foreignId('price_id')->constrained;
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('level_id')->constrained();
+            $table->foreignId('category_id')->constrained();
+            $table->foreignId('price_id')->constrained();
 
             $table->timestamps();
         });
