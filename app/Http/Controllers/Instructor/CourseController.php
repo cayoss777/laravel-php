@@ -22,7 +22,15 @@ class CourseController extends Controller
     public function index()
     {
         //
-        return view('instructor.courses.index');
+        $courses = Course::all(); // o la query que necesites 
+        $courses = Course::where('user_id', auth()->id())->get();
+        return view('instructor.courses.index',compact('courses'));
+
+        
+        $course->save();
+$course->status = CourseStatus::from((int) $request->status);
+
+        //return view('instructor.courses.index', compact('courses'));
     }
 
     /**

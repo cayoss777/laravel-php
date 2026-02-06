@@ -14,6 +14,7 @@
                 </h2>
 
                 <x-validation-errors class="mb-4"/>
+
                 <div class="mb-4">
                     <x-label>
                         Nombre del curso
@@ -21,7 +22,8 @@
                     <x-input placeholder="Nombre dek curso" 
                     class="w-full"
                     name="title"
-                    value="{{old('title')}}"/>
+                    value="{{old('title')}}"
+                    oninput="string_to_slug(this.value,'#slug')"/>
                 </div>
 
 
@@ -29,7 +31,8 @@
                     <x-label>
                        Slug
                     </x-label>
-                    <x-input placeholder="Slug dek curso" 
+                    <x-input id="slug"
+                    placeholder="Slug dek curso" 
                     class="w-full"
                     name="slug"
                     value="{{old('slug')}}"/>

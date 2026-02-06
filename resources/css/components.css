@@ -13,3 +13,6 @@
     @apply bg-green-500 text-white hover:bg-green-700;
   }
  
+  .flex-1 {
+  flex: 1 1 0%;
+}
