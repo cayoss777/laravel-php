@@ -22,7 +22,7 @@
         <ul>
             @forelse ($courses as $course)
                 <li class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <a href="{{route('instructor.courses.edit',$course)}}" class="flex">
+                <a href="{{route('instructor.courses.edit', $course)}}"  class="flex">
                     <figure class="flex-shrink-0">
                         <img src="{{$course->image}}"
                         class="w-full md:w-16 h-16 object-cover object-center">

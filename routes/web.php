@@ -7,7 +7,6 @@ use App\Http\Controllers\Instructor\CourseController;
 
 
 
-
 Route::resource('courses', CourseController::class)->names('instructor.courses');
 
 Route::get('/', function () {

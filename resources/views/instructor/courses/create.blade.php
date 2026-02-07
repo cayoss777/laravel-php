@@ -3,7 +3,7 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             CREAR Dash de Cursos
         </h2>
-        </x-slot>
+    </x-slot>
         <x-container class="mt-12" width="4xl">
             <div class="bg-white rounded-lg shadow-lg p-6">
                 <form action="{{route('instructor.courses.store')}}" method="POST">

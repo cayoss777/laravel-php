@@ -31,6 +31,7 @@ class Course extends Model
         'level_id',
         'category_id',
         'price_id',
+        'published_at',
         ];
 
 //       protected $casts=[
