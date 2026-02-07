@@ -1,4 +1,4 @@
-name: Laravel_cayo_ac
+name: Laravel_cayo_act
 
 on:
   push:
@@ -15,9 +15,9 @@ jobs:
         image: mysql:8.2.12
         env:
           MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: laravel_test
-          MYSQL_USER: laravel
-          MYSQL_PASSWORD: secret
+          MYSQL_DATABASE: bd_laravel
+          MYSQL_USER: root
+          MYSQL_PASSWORD: 
         ports:
           - 3306:3306
         options: >-
