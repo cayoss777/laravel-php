@@ -133,7 +133,14 @@
 
                   <div class="grid grid-cols2 gap-4">
                     <figure>
-                      <img src="{{$course->image}}">
+                     <img id="imgPreview" class="w-full aspect-video" src="{{$course->image}}">
+
+                     
+
+
+                      <!--<img id="imgPreview" class="w-full aspect-video" src="{ Storage::url($course->image) }}">-->
+
+
                     </figure>
                     <div>
                       <p>Lorem</p>
@@ -141,10 +148,11 @@
                           <span class="btn btn-blue md:hidden">
                             Selecciona una imagen
                           </span>
-                          <input class="hidden md:block" 
-                          type="file" 
-                          accept="image/*" 
-                          name="image">
+                    
+    <input type="file" name="image" accept="image/*" onchange="preview_image(event, '#imgPreview')" />
+    
+    
+
                       </label>
                       
                       <div class="flex justify-end mt-4">
@@ -168,3 +176,7 @@
 </x-instructor-layout>
 
 <script src="{{ asset('vendor/ckeditor5-build-classic/build/ckeditor.js') }}"></script>
+
+
+<script src="{{ asset('js/preview_image.js') }}"></script>
+
